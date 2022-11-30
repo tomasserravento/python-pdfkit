@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
 import os
 import io
-try:
-    # Python 2.x and 3.x support for checking string types
-    assert basestring
-    assert unicode
-except NameError:
+import sys
+
+# Python 2.x and 3.x support for checking string types
+if sys.version_info[0] >= 3:
     basestring = str
     unicode = str
-
-
 
 class Source(object):
     def __init__(self, url_or_file, type_):
