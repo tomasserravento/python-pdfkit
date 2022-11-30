@@ -7,14 +7,11 @@ from .source import Source
 from .configuration import Configuration
 import io
 import codecs
-try:
-    # Python 2.x and 3.x support for checking string types
-    basestring
-    unicode
-except NameError:
+
+# Python 2.x and 3.x support for checking string types
+if sys.version_info[0] >= 3:
     basestring = str
     unicode = str
-
 
 class PDFKit(object):
     """
