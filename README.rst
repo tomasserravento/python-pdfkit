@@ -12,6 +12,8 @@ Python 2 and 3 wrapper for wkhtmltopdf utility to convert HTML to PDF using Webk
 
 This is adapted version of `ruby PDFKit <https://github.com/pdfkit/pdfkit>`_ library, so big thanks to them!
 
+**Note: this fork fixes this issue when using Python v3: https://github.com/JazzCore/python-pdfkit/issues/218**
+
 Installation
 ------------
 
